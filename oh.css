@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+}
+figure{
+    margin: 0;
+    padding: 20px 0 10px 100px;
+}
+.logo1{
+    width: 170px;
+}
+#find{
+    display: flex;
+    flex: content;
+    align-content: center;
+    padding-left: 100px;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(187, 181, 181, 0.897);  
+}
+.city{
+    background-color: rgba(187, 181, 181, 0.897); 
+    border: none;
+    padding: 15px;
+}
+.city::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.loc{
+    background-color:rgba(187, 181, 181, 0.897);  
+    border: none;
+}
+.fc{
+    font-size: medium;
+}
+.res{
+    margin: 0;
+    padding: 30px 0 0 70px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(245, 238, 238);
+}
+
+.ress {
+    margin: 0;
+    padding-left: 110px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(245, 238, 238);
+}
+
+.dec {
+    margin: 0%;
+    padding: 15px 0 0 40px;
+    font-size: 20px;
+    background-color: rgb(245, 238, 238);
+}
+
+.decc{
+    margin: 0%;
+    padding: 0px 0 0 70px;
+    font-size: 20px;
+    background-color: rgb(245, 238, 238);
+}
+#explo{
+ 
+    padding: 30px 0 40px 80px;
+    background-color: rgb(245, 238, 238);
+}
+#explo button{
+    border-radius: 25px;
+    height: 50px;
+    width: 65%;
+    background-color: rgb(195, 43, 226);
+    color: white;
+    font-size: 14px;
+    border-color: pink;
+}
+h2{
+    margin: 0;
+    padding: 40px 0 15px 15px;
+    font-weight: bold;
+}
+.bo{
+    display: flex;
+    align-items: baseline;
+}
+.cho{
+    
+}
+
+	
+
+.food{
+    width: 200px;
+}
