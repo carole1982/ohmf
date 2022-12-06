@@ -1,9 +1,11 @@
 body{
     margin: 0;
 }
-figure{
+#haut figure {
     margin: 0;
     padding: 20px 0 10px 100px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 110%);
+
 }
 .logo1{
     width: 170px;
@@ -14,13 +16,15 @@ figure{
     align-content: center;
     padding-left: 100px;
     width: 100%;
-    height: 45px;
-    background-color: rgba(187, 181, 181, 0.897);  
+    height: 50px;
+    background-color: rgb(223 219 219 / 90%);
+
+
 }
 .city{
-    background-color: rgba(187, 181, 181, 0.897); 
+    background-color:  rgb(223 219 219 / 90%);
     border: none;
-    padding: 15px;
+    padding: 17px;
 }
 .city::placeholder{
     color: black;
@@ -29,7 +33,7 @@ figure{
 
 }
 .loc{
-    background-color:rgba(187, 181, 181, 0.897);  
+    background-color:  rgb(223 219 219 / 90%);
     border: none;
 }
 .fc{
@@ -40,7 +44,7 @@ figure{
     padding: 30px 0 0 70px;
     font-size: 25px;
     font-weight: bold;
-    background-color: rgb(245, 238, 238);
+    background-color: rgb(231 231 231 / 71%);
 }
 
 .ress {
@@ -48,26 +52,26 @@ figure{
     padding-left: 110px;
     font-size: 25px;
     font-weight: bold;
-    background-color: rgb(245, 238, 238);
+    background-color: rgb(231 231 231 / 71%);
 }
 
 .dec {
     margin: 0%;
     padding: 15px 0 0 40px;
     font-size: 20px;
-    background-color: rgb(245, 238, 238);
+    background-color: rgb(231 231 231 / 71%);
 }
 
 .decc{
     margin: 0%;
     padding: 0px 0 0 70px;
     font-size: 20px;
-    background-color: rgb(245, 238, 238);
+    background-color: rgb(231 231 231 / 71%);
 }
 #explo{
  
-    padding: 30px 0 40px 80px;
-    background-color: rgb(245, 238, 238);
+    padding: 30px 0 50px 80px;
+    background-color: rgb(231 231 231 / 71%);
 }
 #explo button{
     border-radius: 25px;
@@ -87,12 +91,106 @@ h2{
     display: flex;
   
 }
-.cho{
+.one, .two, .three{
+    display: flex;
+    background-color:#9356DC ;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 20px;
+}
+.cho {
+    display: flex;
+    justify-content: flex-start;
+    background-color:  rgb(245 243 243 / 71%);
+    align-items: center;
+    padding:20px 85px 20px 30px;
+    border-radius: 15px;
+    gap: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.cho:hover{
+    background-color: #c7b3e0;
+}
+.com{
+    display: flex;
+    justify-content: flex-start;
+    background-color:  rgb(245 243 243 / 71%);
+    align-items: center;
+    padding:20px 100px 20px 30px;
+    border-radius: 15px;
+    gap: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+}
+
+.deg{
+    display: flex;
+    justify-content: flex-start;
+    background-color:  rgb(245 243 243 / 71%);
+    align-items: center;
+    padding:20px 95px 20px 30px;
+    border-radius: 15px;
+    gap: 30px;
+    font-weight: bold;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+}
+.mob{
+    color: grey;
+    font-size: 20px;
+}
+.list{
+    color: grey;
+    font-size: 20px;
+}
+.store{
+    color: grey;
+    font-size: 20px;
+}
+#resto{
+    margin-top: 60px;
+    background-color:  rgb(231 231 231 / 71%);
+    padding: 20px 0 50px 0;
+}
+
+figure{
+    margin: 0;
+}
+.food{
+    height: 180px;
+    width: 350px;
+    border-radius: 15px 15px 0 0 ;
+}
+h3{
+    margin: 0;
+    padding: 10px 0 0 20px;
+}
+.coeur{
+    display: flex;
+    align-items: baseline;
+    gap: 130px;
     
 }
-
-	
-
-.food{
-    width: 200px;
+#palette, #note, #french, #sens
+{
+    border: solid 1px white;
+    margin: 0 20px 20px 20px;
+    border-radius: 15px;
+    background-color: white;
 }
+.heart{
+    font-size: 25px;
+}
+.lieux{
+    padding: 5px 0 15px 23px;
+}
+
