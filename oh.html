@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./oh.css">
     <link rel="stylesheet" href="./fd.css">
+    <link rel="stylesheet" href="./0h.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:ital,wght@0,500;1,400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="https://kit.fontawesome.com/010ecb02b3.js" crossorigin="anonymous"></script>
 
     <title>ohmyfood</title>
 </head>
 <body>
+    <div class="chargement">
+        <div class="lo">LOADER</div>
+        
+    </div>
     <header>
         <div id="haut">
                     <figure>
@@ -49,18 +57,17 @@
 <main>
     <section>
         <div id="choice">
-                    <div id="fonct">
+                    
                         <h2>Fonctionnement</h2>
-                    </div>
+                        <div id="fonct">
+                    
                     <div class="bo">
                             <div class="one">
-                                1
+                                <p>1</p>
                             </div>
                                 <a href class="cho">
                                         <i class="fa-solid mob fa-mobile-screen-button"></i>
-                                    <div class="cr">
-                                        Choisissez un restaurant
-                                    </div>
+                                        <p>Choisissez un restaurant</p>
                                 </a>
                     </div>
                     <div class="bo">
@@ -69,9 +76,7 @@
                             </div>
                                 <a href class="com">
                                     <i class="fa-solid list fa-list"></i>
-                                    <div class="cvm">
-                                        Composez votre menu
-                                    </div>
+                                    <p>Composez votre menu</p>
                                 </a>
                     </div>
                     <div class="bo">
@@ -80,93 +85,124 @@
                             </div>
                                 <a href="" class="deg">
                                     <i class="fa-solid store fa-store"></i>
-                                    <div class="dr">
-                                        Dégustez au restaurant
-                                    </div>
+                                    <p>Dégustez au restaurant</p>
+                                        
                                 </a>
+                    </div>
                     </div>
         </div>
     </section>
     <article>
+            <h2>Restaurants</h2>
         <div id="resto">
-                <div class="rest">
-                    <h2>Restaurants</h2>
-                </div>
-                <div id="palette">
-                        <figure>
+            <div id="resto1">
+                <a href="lpg.html" class="pl">
+                    <div id="palette">
+                        <div class="novo">
+                            <figure>
                                 <img class="food" src="imago/lpg.jpg" alt="lapalette/">
-                                    <div class="coeur">
-                                        <h3>la palette du goût</h3>
-                                        <i class="fa-regular heart fa-heart"></i>
-                                    </div>
-                                    <!--bouton nouveau-->
-                        </figure>
-                            <div class="lieux">
-                                Ménilmontant
+                            </figure>
+                            <div class="new">
+                                <p>Nouveau</p> 
                             </div>
-                </div>
-                <div id="note">
-                    <figure>
-                            <img class="food" src="imago/lne.jpg" alt="lanote/">
-                                <div class="coeur">
-                                    <h3>la note enchantée</h3>
-                                    <i class="fa-regular heart fa-heart"></i>
-                                </div>
-                                <!--bouton nouveau-->
-                    </figure>
-                        <div class="lieux">
-                            Charonne
                         </div>
-                </div>
-                <div id="french">
-                    <figure>
-                            <img class="food" src="imago/alf.jpg" alt="lafrançaise/">
-                                <div class="coeur">
-                                    <h3>A la française</h3>
-                                    <i class="fa-regular heart fa-heart"></i>
+                        <div class="r1">
+                                <div class="lieux">
+                                    <h3>la palette du goût</h3>
+                                    <p>Ménilmontant</p>
                                 </div>
-                    </figure>
-                        <div class="lieux">
-                            Cité Rouge
+                                <div>
+                                    <i class="fa-regular heart fa-heart"></i>
+                                    <i class="fa-solid ht fa-heart"></i>
+                                </div>
                         </div>
-                </div>
-                <div id="sens">
-                    <figure>
+                    </div>
+                </a>
+                <a href="lne.html" class="nt">
+                    <div id="note">
+                        <div class="novo">
+                            <figure>
+                                <img class="food" src="imago/lne.jpg" alt="lanote/">
+                            </figure>
+                                <div class="new">
+                                    <p>Nouveau</p> 
+                                </div>
+                        </div>
+                        <div class="r1">
+                            <div class="lieux">
+                                <h3>la note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div>  
+                                    <i class="fa-regular heart fa-heart"></i>
+                                    <i class="fa-solid ht fa-heart"></i>
+                            </div>
+                        </div>            
+                    </div>
+                </a>
+            </div>
+            <div id="resto2">
+                <a href="alf.html" class="fr">
+                    <div id="french">
+                        
+                            <figure>
+                                <img class="food" src="imago/alf.jpg" alt="lafrançaise/">
+                            </figure>
+                        
+                        <div class="r1">
+                                <div class="lieux">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div>
+                                        <i class="fa-regular heart fa-heart"></i>
+                                        <i class="fa-solid ht fa-heart"></i>
+                                </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lds.html" class="ds">
+                    <div id="sens">
+                        <figure>
                             <img class="food" src="imago/lds.jpg" alt="délice/">
-                                <div class="coeur">
-                                    <h3>le délice des sens</h3>
-                                    <i class="fa-regular heart fa-heart"></i>
-                                </div>
-                    </figure>
-                        <div class="lieux">
-                            Folie-Méricourt
+                        </figure>
+                        <div class="r1">
+                            <div class="lieux">
+                                <h3>le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular heart fa-heart"></i>
+                                <i class="fa-solid ht fa-heart"></i>
+                            </div>
                         </div>
-                </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </article>
 </main>
     <footer>
         <div id="down">
-            <figure>
-                <img class="logo1" src="imago/logo1.png" alt="omf/"> 
-            </figure>
+            <h4>ohmyfood</h4>
             <div id="f2">
                 <i class="fa-solid fa-utensils"></i>
-                    Proposer un restaurant
+                    <p>Proposer un restaurant</p>
             </div>
             <div id="f3">
                 <figure>
                     <i class="fa-solid fa-handshake-angle"></i>
                 </figure>
-                    Devenir partenaire
+                    <p>Devenir partenaire</p>
             </div>
             <div id="f4">
-                Mentions légales
+                <p>Mentions légales</p>
             </div>
             <div id="f5">
-                Contact
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
             </div>
         </div>
     </footer>
+    </div>
 </body>
 </html>

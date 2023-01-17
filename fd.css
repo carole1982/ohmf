@@ -1,24 +1,392 @@
-#down{
-    background-color:#322d2d;;
+.box{
+    /*effet menu*/
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 0; 
+    animation-name: mn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+ 
+}
+.box:hover{
+    opacity: 1;
+    
+    transition: opacity 1s, width 3s;
+}
+@keyframes mn {
+    from {
+      opacity: 0;
+      transform: translatey(20px);
+      
+    }
+ 
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      
+    }
+  }
+
+
+@media screen and (max-width:767px){
+
+body{
+    margin: 0;
+    font-family: raleway;
+}
+/*header*/
+#pass{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 90px;
+    padding-left: 30px;
+}
+.aro{
+    font-size: 26px;
+    font-weight: bold;
+}
+.logo1{
+    width: 226px;
+}
+#intro .food{
+    width: 100%;
+    height: 320px;
+}
+/*menu*/
+#menu{
+    background-color:  rgb(231 231 231 / 71%);
+    border-radius: 50px 50px 0 0;
+}
+#menu h1{
+    margin: 0;
+    padding: 50px 0 0 20px;
+    font-size: 33px;
+    font-family: shrikhand;
+}
+#menu p{
+    font-family: raleway;
+}
+#menu .heart{
+    padding-top: 50px;
+    font-size: 34px;
+}
+#ref{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#menu h2{
+    padding: 30px 0 5px 20px;
+    margin: 0;
+    font-size: 22px;
+}
+.trait{
+    border-top: solid 4px #99E2D0;
+    margin-left: 20px;
+    width: 8%;
+}
+.name h3{
+    margin: 0;
+    padding: 10px 0 5px 0;
+    font-size: 22px;
+}
+.np{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 92%;
+}
+.box{
+    border: solid 2px white;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+.ok{
+
+}
+.ok:hover{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+    background: #99E2D0;
+    -webkit-box-align: center;
+    
+    width: 100px;
+    height: 40px;
+    transition: right 2s, transform 1s;
+    
+}
+
+
+.price{
+    font-weight: bold;
+    font-size: 22px;
+}
+.check{
+    color: white;
+    margin: auto;
+    font-size: 40px;
+    transition: 500ms;
+    animation-fill-mode: forwards;
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+}
+}
+#com{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#menu button{
+    background: linear-gradient(#FF79DA,#9356DC);
+    padding: 15px 60px;
+    border-radius: 30px;
+    font-size: 22px;
+    border: 0;
     color: white;
 }
-#down .logo1{
-    filter: invert;
-    width: 100px;
-    padding: 30px 0 20px 20px;
+
+
+/*footer*/
+#down{
+   width: 100%;
+
+    background-color:#322d2d;
+    color: white;
 }
-#f2, #f3{
+p{
+    font-family: roboto;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+h4{
+    font-family: skriland;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    margin: 0;
+    padding: 30px 0 20px 30px;
+}
+#f2{
     display: flex;
     align-items: baseline;
     gap: 15px;
-    padding-left: 20px;
-    padding-bottom: 5px;
+    padding-left: 30px;
+    
+}
+#f3{
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    padding-left: 25px;
+    
+}
+#f3 figure{
+    margin: 0;
 }
 #f4{
-    padding-left: 20px;
+    padding-left: 30px;
     padding-bottom: 5px;
 }
 #f5{
-    padding-left: 20px;
-    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    color: white;
 }
+#f5 a{
+    color: white;
+    font-size: 18px;
+    font-family: roboto;
+}
+}
+
+ @media screen and (min-width:766px) and (max-width:2000px){
+
+/*footer*/
+#down{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     background-color:#322d2d;
+     color: white;
+ }
+ p{
+     font-family: roboto;
+     margin: 0;
+     padding-bottom: 10px;
+     font-size: 18px;
+ }
+ h4{
+    display: flex;
+    justify-content: center;
+     font-family: skriland;
+     color: white;
+     font-size: 26px;
+     font-style: italic;
+     margin: 0;
+     padding: 10px 0 10px 0;
+     
+ }
+ #f2{
+     display: flex;
+     align-items: baseline;
+     gap: 15px;
+     justify-content: center;
+     
+ }
+ #f3{
+     display: flex;
+     align-items: baseline;
+     gap: 15px;
+     justify-content: center;
+     
+ }
+ #f3 figure{
+     margin: 0;
+ }
+ #f4{
+    display: flex;
+    justify-content: center;
+     padding-bottom: 5px;
+ }
+ #f5{
+    display: flex;
+    justify-content: center;
+     padding-bottom: 40px;
+ }
+ body{
+    margin: 0;
+    font-family: raleway;
+}
+/*header*/
+#pass{
+    display: flex;
+    align-items: center;
+    
+
+    padding-left: 30px;
+}
+.aro{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+.logo1{
+    width: 226px;
+    display: flex;
+    justify-content: center;
+}
+#intro .food{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+/*menu*/
+#menu{
+
+    background-color:  rgb(231 231 231 / 99%);
+    border-radius: 50px 50px 0 0;
+    margin-left: 190px;
+    width: 80%;
+    margin-top: -50px;
+    position: relative;
+}
+#desk{
+    display: flex;
+    justify-content: center;
+}
+#menu h1{
+    margin: 0;
+    padding: 50px 0 0 20px;
+    font-size: 33px;
+    font-family: shrikhand;
+}
+#menu p{
+    font-family: raleway;
+}
+#menu .heart{
+    padding-top: 50px;
+    font-size: 34px;
+}
+#ref{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#menu h2{
+    padding: 30px 0 5px 20px;
+    margin: 0;
+    font-size: 22px;
+}
+.trait{
+    border-top: solid 4px #99E2D0;
+    margin-left: 20px;
+    width: 8%;
+}
+.name h3{
+    margin: 0;
+    padding: 10px 0 5px 0;
+    font-size: 22px;
+}
+.np{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 92%;
+}
+.box{
+    border: solid 2px white;
+    background-color: white;
+    width: 95%;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.price{
+    font-weight: bold;
+    font-size: 22px;
+}
+#com{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#menu button{
+    background: linear-gradient(#FF79DA,#9356DC);
+    padding: 15px 60px;
+    border-radius: 30px;
+    font-size: 22px;
+    border: 0;
+    color: white;
+}
+#plats{
+    padding-right: 30px;
+}
+#starters{
+    padding-right: 20px;
+    padding-left: 0%;
+}
+
+
+
+
+ }
