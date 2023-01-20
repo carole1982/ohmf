@@ -1,39 +1,42 @@
-.chargement{
-    /* création du loader*/
-
+.loaderout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeout 0.2s linear;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    width: 99vw;
+    height: 100vh;
+}
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        position: absolute;
+    }
+}
+.loader {
     border: 15px solid black;
     background-image:linear-gradient(pink, blue) ;
     color:transparent;
     border-radius: 60%;
     width: 200px;
     height: 200px;
-    -webkit-animation: spin 3s linear infinite;
-    -o-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-    animation-duration: 3s;
-    /*#9356DC #FF79DA #99E2D0*/
-
-    /*placement du loader au milieu de la page*/
-    margin: auto;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    animation: rotate 1s linear infinite;
+    position: absolute;
 }
-.lo{
-    
-    rotate: none;
-position: relative;
-text-align: center;
-}
-
-/*animation du loader*/
-@keyframes spin{
+@keyframes rotate{
     0% {
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
+
+
 
 @media screen and (max-width:767px){
 body{
@@ -52,6 +55,8 @@ body{
 .logo1{
     width: 170px;
 }
+
+
 #find{
     display: flex;
     justify-content: center;
@@ -223,6 +228,8 @@ article{
 }
 .r1{
     display: flex;
+    padding: 20px 10px 0 0;
+    height: 80px;
 
 }
 .r1 p{
@@ -244,6 +251,7 @@ h3{
     margin: 0;
     padding: 10px 0 5px 0px;
     width: max-content;
+    font-size: 22px;
     
 }
 article i{
@@ -499,16 +507,34 @@ article{
 }
 #resto{
     display: flex;
-    padding-left: 20px;
+    margin-left: 80px;
 
 }
-
+#resto1{
+    width: 50%;
+    
+}
+#resto2{
+    width: 50%;
+}
 .r1{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    padding-left: 30px;
 
 }
 .r1 p{
     margin: 0;
+}
+
+    
+.hh{
+    position: relative;
+    bottom: 20px;
+    font-size: 22px;
 }
 
 figure{
@@ -524,8 +550,9 @@ figure{
 }
 h3{
     margin: 0;
-    padding: 10px 0 5px 0px;
+    
     width: max-content;
+    font-size: 22px;
     
 }
 article i{
@@ -537,6 +564,7 @@ article i{
     opacity: 0;
     transition-property: all;
     transition-duration: 2s;
+    
 }
 .ht:hover{
     opacity: 1;
@@ -545,7 +573,8 @@ article i{
     background-clip: text;
     -webkit-background-clip: text;
 }
-    
+
+      
 .new p{
     padding-bottom: 0;
     color: green;
@@ -578,8 +607,8 @@ article i{
 }
 
 .lieux{
-    padding: 5px 0 15px 23px;
-    font-size: 24px;
+    
+    
 }
 
 }
