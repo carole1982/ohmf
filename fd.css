@@ -1,37 +1,44 @@
+/** mobile - max-width:767px **/
 
+/*effet menu*/
 .box{
-    /*effet menu*/
-    width: 100%;
-    padding: 20px;
+    padding: 15px 0 0 10px
+    width: 85%;
     margin-top: 20px;
     opacity: 0; 
     animation-name: mn;
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
- 
+    display: flex;
+    justify-content: space-between;
 }
-.box:hover{
-    opacity: 1;
-    
-    transition: opacity 1s, width 3s;
+#starter .box {
+    animation-delay: 0s;
+}
+
+#plats .box {
+    animation-delay: 0.5s;
+}
+
+#dess .box {
+    animation-delay: 1s;
 }
 @keyframes mn {
     from {
       opacity: 0;
-      transform: translatey(20px);
-      
+      transform: translatey(50px);
     }
- 
     to {
       opacity: 1;
       transform: translateY(0);
-      
     }
-  }
+}
 
 
-@media screen and (max-width:767px){
 
+.menuInfo {
+    overflow: hidden;
+}
 body{
     margin: 0;
     font-family: raleway;
@@ -48,7 +55,7 @@ body{
     margin-bottom: 0;
 }
 .aro{
-    position: fixed;
+    position: absolute;
     left: 20px;
     font-size: 28px;
     font-weight: bold;
@@ -62,9 +69,37 @@ body{
     height: 320px;
 }
 /*menu*/
+.hh{
+    position: relative;
+    bottom: 20px;
+    font-size: 22px;
+}
+article i{
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+}
+#menu .heart{
+    padding-top: 50px;
+    font-size: 34px;
+}
+.ht{
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.ht:hover{
+    opacity: 1;
+    background-image:linear-gradient(pink, blue) ;
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 #menu{
-    background-color:  rgb(231 231 231 / 71%);
+    background-color:  rgb(231 231 231 / 99%);
     border-radius: 50px 50px 0 0;
+    margin-top: -50px;
+    position: relative;
 }
 #menu h1{
     margin: 0;
@@ -75,10 +110,7 @@ body{
 #menu p{
     font-family: raleway;
 }
-#menu .heart{
-    padding-top: 50px;
-    font-size: 34px;
-}
+
 #ref{
     display: flex;
     align-items: center;
@@ -99,59 +131,97 @@ body{
     padding: 10px 0 5px 0;
     font-size: 22px;
 }
-.np{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    gap: 10px;
+h3{
+    margin: 0;
 }
 .box{
     border: solid 2px white;
     border-radius: 15px;
     background: white;
-    height: 7rem;
+    height: 60px;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     display: flex;
     opacity: 0;
-    padding: 0%;
-    width: 90%;
+    align-items: center;
+    width: 85%;
     margin-left: 10px;
+    padding-left: 10px;
+    width: 330px;
 }
 .box .menuInfo{
-    padding: 1.5rem;
     max-width: 100%;
     overflow: hidden;
-    justify-content: space-between;
-    gap: 1rem;
+    width: 85%;
+
 }
+/**
+<div> => display: flex; flex-direction: column; align-items: space-between;     overflow: hidden; white-space: nowrap;
+    <div> => display: flex;
+        <p>Titre</p>
+        <p>Description</p>     text-overflow: ellipsis; overflow: hidden;
+    </div>
+    <p>Price</p>
+    <div class="ok">
+
+    </div>
+</div>
+**/
+.tittle{
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+
+}
+.script{
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+
+}
+/*boton vert*/
 .box .ok {
-    background: #99e2d0;
+    height: 100%;
     cursor: pointer;
-    height: auto;
-    width: 0;
-    opacity: 0;
     border-radius: 0 15px 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    background-color:  #99E2D0;
+    opacity: 1;
+    width: 0;
+    overflow: hidden;
+    transition: width 1s;
 }
-    
-}
-.box .ok .check{
-    font-size: 3rem;
-    color: white;
-    transform: rotate(360deg);
-    transition: 0.4s ease-in-out;
 
+.box .ok .check{
+    font-size: 35px;
+    color: white;
+        transform: rotate(180deg);
+        transition-duration: 0.8s;
+        transition: transform 0.8s;
 }
+.box:hover .ok {
+    width: 60px;
+    transition: width 1s;
+   
+}
+.box:hover .check:hover{
+    transform: rotate(180deg);
+    transition-duration: 0.8s;
+}
+
 .check{
-    font-family: 'Material Icons';
+   font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;
-    line-height: 1;
+     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
     display: inline-block;
@@ -160,14 +230,13 @@ body{
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+    
 }
-
-
 .price{
+    display: flex;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
 }
-
 #com{
     display: flex;
     justify-content: center;
@@ -182,8 +251,6 @@ body{
     border: 0;
     color: white;
 }
-
-
 /*footer*/
 #down{
    width: 100%;
@@ -210,7 +277,6 @@ h4{
     align-items: baseline;
     gap: 15px;
     padding-left: 30px;
-    
 }
 #f3{
     display: flex;
@@ -235,49 +301,82 @@ h4{
     color: white;
     font-size: 18px;
     font-family: roboto;
+    text-decoration: none;
 }
+/** tablette**/
+@media screen and (min-width:768px) and (max-width:999px){
 
-
- @media screen and (min-width:766px) and (max-width:2000px){
+#ref{
+    margin-left: 70px;
+}
+#desk{
+    margin-left: 70px;
+}      
+      
+.box{
+   width: 600px;
+}
+}
+/** desk**/
+ @media screen and (min-width:1000px) and (max-width:2000px){
+/*header*/
+.aro{
+    justify-content: flex-start;
+}
+.logo1{
+    display: flex;
+    justify-content: center;
+}
+#intro .food{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+/*menu*/
+.box{
+    width: 330px;
+ }
+#menu{
+    width: 100%;
+    
+}
+#desk{
+    display: flex;
+    justify-content: center;
+}
+#menu p{
+    font-family: raleway;
+}
+.trait{
+    width: 15%;
+}
+.box{
+    width: 330px;
+    margin-left: 0;
+}
+#plats{
+    margin-right: 50px;
+}
+#starter{
+    margin-right: 50px;
+}
 
 /*footer*/
 #down{
-    width: 100%;
     display: flex;
     flex-direction: column;
-     background-color:#322d2d;
-     color: white;
- }
- p{
-     font-family: roboto;
-     margin: 0;
-     padding-bottom: 10px;
-     font-size: 18px;
  }
  h4{
     display: flex;
     justify-content: center;
-     font-family: skriland;
-     color: white;
-     font-size: 26px;
-     font-style: italic;
-     margin: 0;
      padding: 10px 0 10px 0;
-     
- }
+    }
  #f2{
-     display: flex;
-     align-items: baseline;
      gap: 15px;
      justify-content: center;
-     
  }
  #f3{
-     display: flex;
-     align-items: baseline;
-     gap: 15px;
      justify-content: center;
-     
  }
  #f3 figure{
      margin: 0;
@@ -285,7 +384,6 @@ h4{
  #f4{
     display: flex;
     justify-content: center;
-     padding-bottom: 5px;
  }
  #f5{
     display: flex;
@@ -296,129 +394,5 @@ h4{
     margin: 0;
     font-family: raleway;
 }
-/*header*/
-#pass{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
-    margin-bottom: 20px;
-}
-.aro{
-    position: fixed;
-    left: 20px;
-    justify-content: flex-start;
-    font-size: 26px;
-    font-weight: bold;
-    color: black;
-}
-#intro figure{
-    margin-bottom: 0;
-}
-.logo1{
-    width: 226px;
-    display: flex;
-    justify-content: center;
-}
-#intro .food{
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-}
-/*menu*/
-#menu{
-
-    background-color:  rgb(231 231 231 / 99%);
-    border-radius: 50px 50px 0 0;
-    
-    width: 100%;
-    margin-top: -50px;
-    position: relative;
-}
-#desk{
-    display: flex;
-    justify-content: center;
-}
-#menu h1{
-    margin: 0;
-    padding: 50px 0 0 20px;
-    font-size: 33px;
-    font-family: shrikhand;
-}
-#menu p{
-    font-family: raleway;
-}
-#menu .heart{
-    padding-top: 50px;
-    font-size: 34px;
-}
-#ref{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-#menu h2{
-    padding: 30px 0 5px 20px;
-    margin: 0;
-    font-size: 22px;
-}
-.trait{
-    border-top: solid 4px #99E2D0;
-    margin-left: 20px;
-    width: 8%;
-}
-.name h3{
-    margin: 0;
-    padding: 10px 0 5px 0;
-    font-size: 22px;
-}
-.np{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-}
-.box{
-    border: solid 2px white;
-    background-color: white;
-    width: 110%;
-    border-radius: 15px;
-    padding: 0;
-    height: 95px;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    
-    
-
-}
-.price{
-    font-weight: bold;
-    font-size: 22px;
-}
-#com{
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-#menu button{
-    background: linear-gradient(#FF79DA,#9356DC);
-    padding: 15px 60px;
-    border-radius: 30px;
-    font-size: 22px;
-    border: 0;
-    color: white;
-}
-#plats{
-    padding-right: 30px;
-}
-#starter{
-    margin-right: 60px;
-}
-#plats{
-    margin-right: 60px;
-}
-
-
-
-
  }
+ 

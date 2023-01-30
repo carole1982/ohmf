@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="./fd.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:ital,wght@0,500;1,400&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="https://kit.fontawesome.com/010ecb02b3.js" crossorigin="anonymous"></script>
 
     <title>La note enchantée</title>
 </head>
 <body>
+    <div class="loaderout">
+        <div class="loader"></div>   
+    </div>
     <main>
         <header>
             <div id="intro">
@@ -25,9 +27,9 @@
                     <figure>
                         <img class="logo1" src="imago/logo1.png" alt="omf/"> 
                     </figure>
-                    
+                    <figure>
                         <img class="food" src="imago/lne.jpg" alt="lafrançaise/">
-                    
+                    </figure>
                 </div>
             </div>
         </header>
@@ -35,192 +37,173 @@
             <div id="menu">
                     <div id="ref">
                         <h1>La note enchantée</h1>
-                        <i class="fa-regular heart fa-heart"></i>
+                        <div class="hh">
+                            <i class="fa-regular heart fa-heart"></i>
+                            <i class="fa-solid ht fa-heart"></i>
+                        </div>
                     </div>
                 <div id="desk">
                     <div id="starter">
                         <h2>ENTREES</h2>
                         <div class="trait"></div>
                         <div class="box">
-                                <div class="name">
-                                    <h3>Raviole de foie gras</h3>
-                                </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Accompagnées de leur crème à la truffe</p>
-                                    </div>
-                                    <div class="price">
-                                        25
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="box">
-                                <div class="name">
-                                    <h3>Caviar osciètre</h3>
-                                </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Sur blini à la farine de blé noir</p>
-                                    </div>
-                                    <div class="price">
-                                        35
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="box">
-                                <div class="name">
-                                    <h3>Homard et espuma de...</h3>
-                                </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Marinés aux zestes d'orange</p>
-                                    </div>
-                                    <div class="price">
-                                         20
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="box">
-                            <div class="name">
-                                <h3>Foie gras de canard cuit entier</h3>
-                            </div>
-                            <div class="np">
-                                <div class="sn">
-                                    <p>Confiture de figue et pain taosté</p>
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Raviole de foie gras</h3>
+                                    <p class="script">Accompagnées de leur crème à la truffe</p>
                                 </div>
                                 <div class="price">
-                                     35
-                                <i class="fa-solid fa-euro-sign"></i>
+                                    25€
+                                </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                    </div>
+                            </div>
+                            <div class="box">
+                                <div class="menuInfo">
+                                    <h3 class="titlle">Caviar osciètre</h3>
+                                    <p class="script">Sur blini à la farine de blé noir</p>
+                                </div>
+                                <div class="price">
+                                    35€
+                                </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>        
+                            <div class="box">
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Homard et espuma de...</h3>
+                                    <p class="script">Marinés aux zestes d'orange</p>
+                                </div>
+                                <div class="price">
+                                    20€
+                                </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>       
+                            <div class="box">
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Foie gras de canard cuit entier</h3>
+                                    <p class="script">Confiture de figue et pain taosté</p>
+                                </div>
+                                <div class="price">
+                                    35€
+                                </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
                                 </div>
                             </div>
-                    </div>
-                    </div>
-                    <div id="plats">
-                        <h2>PLATS</h2>
+                        </div>    
+                        <div id="plats">
+                            <h2>PLATS</h2>
                         <div class="trait"></div>
                         <div class="box">
-                                <div class="name">
-                                    <h3>Noix de coquilles Saint-Jacques</h3>
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Noix de coquilles Saint-Jacques</h3>
+                                    <p class="script">Sur lit de purée de céleri-rave</p>
                                 </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Sur lit de purée de céleri-rave</p>
-                                    </div>
-                                    <div class="price">
-                                        40
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
+                                <div class="price">
+                                    40€
                                 </div>
-                        </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>        
+                            <div class="box">
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Langoustine poêlée</h3>
+                                    <p class="script">Et purée de patate douce</p>
+                                </div>
+                                <div class="price">
+                                    35€
+                                </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>   
                         <div class="box">
-                                <div class="name">
-                                    <h3>Langoustine poêlée</h3>
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Mijoté de queue de boeuf</h3>
+                                    <p class="script">Et riz sauvage aux zestes de citron</p>
                                 </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Et purée de patate douce</p>
-                                    </div>
-                                    <div class="price">
-                                        35
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
+                                <div class="price">
+                                    44€
                                 </div>
-                        </div>
-                        <div class="box">
-                                <div class="name">
-                                    <h3>Mijoté de queue de boeuf</h3>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
                                 </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Et riz sauvage aux zestes de citron</p>
-                                    </div>
-                                    <div class="price">
-                                        44
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
+                            </div>
+                        </div>   
                     <div id="dess">
                         <h2>DESSERTS</h2>
                         <div class="trait"></div>
                         <div class="box">
-                                <div class="name">
-                                    <h3>Macaron noisette et chocolat</h3>
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Macaron noisette et chocolat</h3>
+                                    <p class="script">Glace au caramel brun et sel de Guérande</p>
                                 </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Glace au caramel brun et sel de Guérande</p>
-                                    </div>
-                                    <div class="price">
-                                        18
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
+                                <div class="price">
+                                    18€
                                 </div>
-                        </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>   
                         <div class="box">
-                                <div class="name">
-                                    <h3>Baba au rhum Revisité</h3>
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Baba au rhum Revisité</h3>
+                                    <p class="script">Avec son coulis de citron</p>
                                 </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Avec son coulis de citron</p>
-                                    </div>
-                                    <div class="price">
-                                        22
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
+                                <div class="price">
+                                    22€
                                 </div>
-                        </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>    
                         <div class="box">
-                                <div class="name">
-                                    <h3>Tarte au citron meringuée</h3>
+                                <div class="menuInfo">
+                                    <h3 class="tittle">Tarte au citron meringuée</h3>
+                                    <p class="script">Déstructurée</p>
                                 </div>
-                                <div class="np">
-                                    <div class="sn">
-                                        <p>Déstructurée</p>
-                                    </div>
-                                    <div class="price">
-                                        23
-                                    <i class="fa-solid fa-euro-sign"></i>
-                                    </div>
+                                <div class="price">
+                                    23€
                                 </div>
+                                <div class="ok">
+                                    <span class="check far check fa-check-circle" aria-hidden="true"></span> 
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </div>   
                     <div id="com">
                         <form action="/">
                             <button type="submit">Commander</button> 
                         </form>
                     </div>
-            </div>
+                </div>
         </section>
-    </main>
         <footer>
             <div id="down">
-                <figure>
-                    <img class="logo1" src="imago/logo1.png" alt="omf/"> 
-                </figure>
+                <h4>ohmyfood</h4>
                 <div id="f2">
                     <i class="fa-solid fa-utensils"></i>
-                    <p>Proposer un restaurant</p>
+                        <p>Proposer un restaurant</p>
                 </div>
                 <div id="f3">
                     <figure>
                         <i class="fa-solid fa-handshake-angle"></i>
                     </figure>
-                    <p>Devenir partenaire</p>
+                        <p>Devenir partenaire</p>
                 </div>
                 <div id="f4">
                     <p>Mentions légales</p>
                 </div>
                 <div id="f5">
-                    <p>Contact</p>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
                 </div>
             </div>
         </footer>
-</body>
-</html>
+</main>
+    </body>
+    </html>
