@@ -9,9 +9,9 @@
     animation-fill-mode: both;
     width: 99vw;
     height: 100vh;
-    position: fixed;
     z-index: 100;
     background-color: white;
+    
 }
 @keyframes fadeout{
     0% {
@@ -86,6 +86,7 @@ body{
     font-size: medium;
 }
 .res{
+    font-family: roboto;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -96,6 +97,7 @@ body{
 }
 
 .ress {
+    font-family: roboto;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -139,6 +141,9 @@ body{
     font-size: 14px;
     border: 0;
 }
+#explo button:hover{
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 150%);
+}
 article h2{
     padding: 0 0 15px 15px;
 
@@ -152,7 +157,7 @@ h2{
     padding: 40px 0 40px 15px;
 }
 #choice{
-    padding-bottom: 20px;
+    padding-top: 10px;
 }
 .bo{
     display: flex;
@@ -162,17 +167,20 @@ h2{
 .bo p{
     padding-bottom: 0;
 }
+.one p, .two p, .three p {
+    font-size: 12px;
+}
 .one, .two, .three{
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     background-color:#9356DC ;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 15px;
     color: white;
-    left: 20px;
+    left: 10px;
     top: 25%;
 }
 .com, .deg, .cho{
@@ -182,22 +190,18 @@ h2{
     align-items: center;
     padding:28px 0px 28px 30px;
     border-radius: 15px;
-    gap: 30px;
-    font-weight: bold;
-
-    font-size: 16px;
+    gap: 26px;
+     font-size: 16px;
     box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
-    width: 80%;
-    margin-left: 30px;
+    width: 87%;
+    margin-left: 23px;
+    height: 13px;
 }
-.cho:hover{
-    background-color:#faf3ff;
-    color: #9356DC;
+
+.cho:hover, .com:hover, .deg:hover{  
+    background-color:#faf3ff; 
 }
-.com:hover{
-    background-color:#faf3ff;
-    color: #9356DC;
-}
+
 .mob:hover, .list:hover, .store:hover{
     color: #9356DC;
 }
@@ -209,37 +213,28 @@ a{
     background-color: #faf3ff;
 }
 
-.deg:hover{
-    background-color:#faf3ff;
-    color: #9356DC;
+.mob,.list, .store{
+    color: grey;
+    font-size: 20px;
 }
 
-.mob{
-    color: grey;
-    font-size: 20px;
-}
-.list{
-    color: grey;
-    font-size: 20px;
-}
-.store{
-    color: grey;
-    font-size: 20px;
-}
 article{
     margin-top: 60px;
     background-color:  rgb(231 231 231 / 71%);
-    padding: 20px 0 50px 0;
+    padding: 50px 0 50px 0;
 }
 .r1{
     display: flex;
     align-items: center;
-    padding: 10px 10px 0 0;
+ 
     height: 70px;
 }
 .r1 p{
     margin: 0;
     font-size: 16px;
+    font-weight: 600;
+    font-family: Raleway;
+    padding-bottom: 0px;
 }
 figure{
     margin: 0;
@@ -248,7 +243,7 @@ figure{
     display: flex;
     position: relative;
     object-fit: cover;
-    height: 220px;
+    height: 180px;
     width: 100%;
     border-radius: 15px 15px 0 0 ;
 }
@@ -256,22 +251,28 @@ h3{
     margin: 0;
     padding: 10px 0 5px 0px;
     width: max-content;
-    font-size: 20px;
-    
+    font-size: 17px;
+    font-family: roboto;
 }
 article i{
     position: absolute;
     right: 20px;
     font-size: 24px;
 }
+.pinkheart{
+    position: relative;
+    bottom: 23px;
+    font-size: 22px;
+}
+
 .ht{
     opacity: 0;
     transition-property: all;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 .ht:hover{
     opacity: 1;
-    background-image:linear-gradient(pink, blue) ;
+    background-image:linear-gradient(pink, rgb(234, 0, 255)) ;
     color:transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -279,6 +280,7 @@ article i{
 .new p{
     padding-bottom: 0;
     color: green;
+    font-size: 14px;
 }
 .novo{
     display: flex;
@@ -288,20 +290,45 @@ article i{
     width: 100%;
 }
 .new {
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     background-color: #99E2D0;
     border: solid 2px #99E2D0;
-    width: 100px;
+    width: 65px;
     padding: 5px;
     position: absolute;
     right: 20px;
     margin-top: 15px;
 }
+#palette .r1{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+#note .r1{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+#french .r1{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+#sens .r1{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
 #palette, #note, #french, #sens
 {
     border: solid 1px white;
-    margin: 0 20px 20px 20px;
+    margin: 0 5px 20px 5px;
     border-radius: 15px;
     background-color: white;
     width: 95%;
@@ -316,9 +343,8 @@ article i{
 
 /** tablette**/
 @media screen and (min-width:768px) and (max-width:999px){
-.bo{
-    width: 30%;
-}
+
+
 .bo p{font-size: 15px;
     }
 .com, .deg, .cho{
@@ -378,10 +404,8 @@ head{
     padding-left: 30px;
 }
 
-.hh{
-    position: relative;
+.hh{ 
     bottom: 20px;
-    font-size: 22px;
 }
 
 h3{
@@ -394,5 +418,11 @@ h3{
 #palette, #note, #french, #sens
 {
     width: 75%;
+}
+#palette .r1{
+    padding: 0;
+}
+.r1{
+    padding: 0;
 }
 }

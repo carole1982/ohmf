@@ -62,33 +62,46 @@ body{
     color: black;
 }
 .logo1{
-    width: 226px;
+    width: 160px;
 }
 #intro .food{
     width: 100%;
     height: 320px;
+    object-fit: cover;
+
 }
 /*menu*/
-.hh{
-    position: relative;
-    bottom: 20px;
-    font-size: 22px;
-}
-article i{
-    position: absolute;
-    right: 20px;
-    font-size: 24px;
-}
+
+
 #menu .heart{
     padding-top: 50px;
     font-size: 34px;
 }
-.ht{
+.ref-resto{
+    display: flex;
+}
+.hh{
+    position: relative;
+    left: 50px;
+    font-size: 32px;
+    top: 50px;
+}
+.hhlne, .hhlds{
+    position: relative;
+    left: 60px;
+    font-size: 32px;
+    top: 25px;
+}
+.whiteheart{
+    position: absolute;
+}
+
+.colorheart{
     opacity: 0;
     transition-property: all;
     transition-duration: 2s;
 }
-.ht:hover{
+.colorheart:hover{
     opacity: 1;
     background-image:linear-gradient(pink, blue) ;
     color:transparent;
@@ -104,14 +117,14 @@ article i{
 #menu h1{
     margin: 0;
     padding: 50px 0 0 20px;
-    font-size: 33px;
+    font-size: 26px;
     font-family: shrikhand;
 }
 #menu p{
     font-family: raleway;
 }
 
-#ref{
+#name-resto{
     display: flex;
     align-items: center;
     gap: 50px;
@@ -119,7 +132,7 @@ article i{
 #menu h2{
     padding: 30px 0 5px 20px;
     margin: 0;
-    font-size: 22px;
+    font-size: 16px;
 }
 .trait{
     border-top: solid 4px #99E2D0;
@@ -135,18 +148,18 @@ h3{
     margin: 0;
 }
 .box{
-    border: solid 2px white;
+    border: solid 0px white;
     border-radius: 15px;
     background: white;
     height: 60px;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    box-shadow: rgb(149 157 165 / 30%) 0px 8px 24px;
     display: flex;
     opacity: 0;
     align-items: center;
-    width: 85%;
+    width: 90%;
     margin-left: 10px;
     padding-left: 10px;
-    width: 330px;
+    
 }
 .box .menuInfo{
     max-width: 100%;
@@ -154,18 +167,7 @@ h3{
     width: 85%;
 
 }
-/**
-<div> => display: flex; flex-direction: column; align-items: space-between;     overflow: hidden; white-space: nowrap;
-    <div> => display: flex;
-        <p>Titre</p>
-        <p>Description</p>     text-overflow: ellipsis; overflow: hidden;
-    </div>
-    <p>Price</p>
-    <div class="ok">
 
-    </div>
-</div>
-**/
 .tittle{
     display: block;
     margin: 0;
@@ -203,17 +205,20 @@ h3{
 .box .ok .check{
     font-size: 35px;
     color: white;
-        transform: rotate(180deg);
-        transition-duration: 0.8s;
-        transition: transform 0.8s;
+        
 }
 .box:hover .ok {
     width: 60px;
     transition: width 1s;
    
 }
-.box:hover .check:hover{
-    transform: rotate(180deg);
+.ok:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+    transition: transform 0.8s;
+}
+.box:hover .check{
+    transform: rotate(360deg);
     transition-duration: 0.8s;
 }
 
@@ -236,6 +241,7 @@ h3{
     display: flex;
     font-weight: bold;
     font-size: 18px;
+    padding-right: 15px;
 }
 #com{
     display: flex;
@@ -244,12 +250,19 @@ h3{
     padding-bottom: 40px;
 }
 #menu button{
-    background: linear-gradient(#FF79DA,#9356DC);
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+
     padding: 15px 60px;
     border-radius: 30px;
     font-size: 22px;
     border: 0;
     color: white;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#menu button:hover{
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 150%);
 }
 /*footer*/
 #down{
@@ -312,10 +325,8 @@ h4{
 #desk{
     margin-left: 70px;
 }      
-      
-.box{
-   width: 600px;
-}
+       
+
 }
 /** desk**/
  @media screen and (min-width:1000px) and (max-width:2000px){
@@ -350,15 +361,27 @@ h4{
 .trait{
     width: 15%;
 }
+.tittle{
+    font-size: 14px;
+}
+.script{
+    font-size: 13px;
+}
 .box{
-    width: 330px;
+    width: 270px;
     margin-left: 0;
+}
+.price{
+    font-size: 16px;
 }
 #plats{
     margin-right: 50px;
 }
 #starter{
     margin-right: 50px;
+}
+#ref{
+    padding-left: 30px;
 }
 
 /*footer*/
