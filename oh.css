@@ -11,7 +11,7 @@
     height: 100vh;
     z-index: 100;
     background-color: white;
-    
+    position: fixed;
 }
 @keyframes fadeout{
     0% {
@@ -19,7 +19,7 @@
     }
     100% {
         opacity: 0;
-        position: absolute;
+        z-index: -1;
     }
 }
 .loader {
@@ -44,8 +44,7 @@
 /** mobile - max-width:767px **/
 body{
     margin: 0;
-    font-family: roboto;
-    
+    font-family: roboto; 
 }
 #haut figure {
     display: flex;
@@ -58,8 +57,6 @@ body{
 .logo1{
     width: 170px;
 }
-
-
 #find{
     display: flex;
     justify-content: center;
@@ -76,7 +73,6 @@ body{
     color: black;
     font-weight: bold;
     font-size: 14px;
-
 }
 .loc{
     background-color:  rgb(223 219 219 / 90%);
@@ -114,7 +110,6 @@ body{
     background-color: rgb(231 231 231 / 71%);
     padding-top: 10px;
 }
-
 .decc{
     margin: 0%;
     display: flex;
@@ -129,8 +124,7 @@ body{
     justify-content: center;
     background-color: rgb(231 231 231 / 71%);
 }
-#explo button{
-    
+#explo button{   
     border-radius: 25px;
     height: 50px;
     width: 100%;
@@ -146,7 +140,6 @@ body{
 }
 article h2{
     padding: 0 0 15px 15px;
-
 }
 h2{
     margin: 0;
@@ -197,11 +190,9 @@ h2{
     margin-left: 23px;
     height: 13px;
 }
-
 .cho:hover, .com:hover, .deg:hover{  
-    background-color:#faf3ff; 
+    background-color:#e0d1ec; 
 }
-
 .mob:hover, .list:hover, .store:hover{
     color: #9356DC;
 }
@@ -212,12 +203,10 @@ a{
 .cr:hover{
     background-color: #faf3ff;
 }
-
 .mob,.list, .store{
     color: grey;
     font-size: 20px;
 }
-
 article{
     margin-top: 60px;
     background-color:  rgb(231 231 231 / 71%);
@@ -226,7 +215,6 @@ article{
 .r1{
     display: flex;
     align-items: center;
- 
     height: 70px;
 }
 .r1 p{
@@ -264,7 +252,6 @@ article i{
     bottom: 23px;
     font-size: 22px;
 }
-
 .ht{
     opacity: 0;
     transition-property: all;
@@ -276,11 +263,6 @@ article i{
     color:transparent;
     background-clip: text;
     -webkit-background-clip: text;
-}
-.new p{
-    padding-bottom: 0;
-    color: green;
-    font-size: 14px;
 }
 .novo{
     display: flex;
@@ -295,11 +277,11 @@ article i{
     justify-content: center;
     background-color: #99E2D0;
     border: solid 2px #99E2D0;
-    width: 65px;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     position: absolute;
     right: 20px;
     margin-top: 15px;
+    color: green;
 }
 #palette .r1{
     display: grid;
@@ -343,86 +325,76 @@ article i{
 
 /** tablette**/
 @media screen and (min-width:768px) and (max-width:999px){
-
-
-.bo p{font-size: 15px;
+    .bo p{font-size: 15px;
+        }
+    .com, .deg, .cho{
+        font-size: 12px;
     }
-.com, .deg, .cho{
-    font-size: 12px;
-}
 }
 
 /** desk**/
 @media screen and (min-width:1000px) and (max-width:2000px){
-
-head{
-    width: 100%;
-}
-#haut{
-    width: 100%;
-}
-#haut figure {
-    width: 100%;
-}
-
-.fc{
-    font-size: medium;
-}
-
-#fonct{
-    display: flex;
-    justify-content: center;
-}
-
-.bo{
-    width: 33%;
-}
-.list{
-    color: grey;
-    font-size: 20px;
-}
-.store{
-    color: grey;
-    font-size: 20px;
-}
-#resto{
-    display: flex;
-    margin-left: 80px;
-}
-#resto1{
-    width: 50%;
-    
-}
-#resto2{
-    width: 50%;
-}
-.r1{
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    position: relative;
-    padding-left: 30px;
-}
-
-.hh{ 
-    bottom: 20px;
-}
-
-h3{
-    padding: 0; 
-}
-
-.new {
-    right: 30px;
-}
-#palette, #note, #french, #sens
-{
-    width: 75%;
-}
-#palette .r1{
-    padding: 0;
-}
-.r1{
-    padding: 0;
-}
+    head{
+        width: 100%;
+    }
+    #haut{
+        width: 100%;
+    }
+    #haut figure {
+        width: 100%;
+    }
+    .fc{
+        font-size: medium;
+    }
+    #fonct{
+        display: flex;
+        justify-content: center;
+    }
+    .bo{
+        width: 33%;
+    }
+    .list{
+        color: grey;
+        font-size: 20px;
+    }
+    .store{
+        color: grey;
+        font-size: 20px;
+    }
+    #resto{
+        display: flex;
+        margin-left: 80px;
+    }
+    #resto1{
+        width: 50%; 
+    }
+    #resto2{
+        width: 50%;
+    }
+    .r1{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        position: relative;
+        padding-left: 30px;
+    }
+    .hh{ 
+        bottom: 20px;
+    }
+    h3{
+        padding: 0; 
+    }
+    .new {
+        right: 30px;
+    }
+    #palette, #note, #french, #sens
+    {
+        width: 75%;
+    }
+    #palette .r1{
+        padding: 0;
+    }
+    .r1{
+        padding: 0;
+    }
 }
