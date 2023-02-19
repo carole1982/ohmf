@@ -49,7 +49,7 @@ body{
 #haut figure {
     display: flex;
     justify-content: center;
-    box-shadow: 0 3px 15px rgb(0 0 0 / 110%);
+    box-shadow: 0 3px 15px rgb(0 0 0 / 100%);
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0;
@@ -91,7 +91,6 @@ body{
     background-color: rgb(231 231 231 / 71%);
     padding-top: 35px;
 }
-
 .ress {
     font-family: roboto;
     margin: 0;
@@ -101,7 +100,6 @@ body{
     font-weight: bold;
     background-color: rgb(231 231 231 / 71%);
 }
-
 .dec {
     margin: 0%;
     display: flex;
@@ -261,7 +259,6 @@ article i{
     opacity: 1;
     background-image:linear-gradient(pink, rgb(234, 0, 255)) ;
     color:transparent;
-    background-clip: text;
     -webkit-background-clip: text;
 }
 .novo{
@@ -309,7 +306,7 @@ article i{
 }
 #palette, #note, #french, #sens
 {
-    border: solid 1px white;
+    border: solid 1px whitesmoke;
     margin: 0 5px 20px 5px;
     border-radius: 15px;
     background-color: white;
@@ -331,7 +328,6 @@ article i{
         font-size: 12px;
     }
 }
-
 /** desk**/
 @media screen and (min-width:1000px) and (max-width:2000px){
     head{

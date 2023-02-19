@@ -69,7 +69,7 @@ body{
 }
 .hhlne, .hhlds{
     position: relative;
-    left: 60px;
+    right: 7px;
     font-size: 32px;
     top: 25px;
 }
